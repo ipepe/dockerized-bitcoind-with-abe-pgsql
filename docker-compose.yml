@@ -1,0 +1,12 @@
+version: '2'
+services:
+  bap:
+    build: ./src
+    ports:
+     - "15432:5432"
+    volumes:
+      - ./bap_data:/data
+
+# docker-compose up --build
+
+# docker exec -ti dockerizedbitcoindwithabepgsql_bap_1  /bin/bash
